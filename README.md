@@ -9,3 +9,15 @@ MVP includes:
 - Minimal use of media queries thanks to Bootstrap
 
 Functional Deployable application
+
+Version 2
+
+Changes to index.html
+- Placed Navbar within Header tag
+- Created Div "container to prepare for Bootstrap content
+
+Version 1
+- set up initial html
+- added Bootstrap Nav bar
+- Linked Navbar between pages Contact, Portfolio & About Me
+- Fixed Bootstrap styling on button "highlight" for current page
