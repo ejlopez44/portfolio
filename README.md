@@ -10,6 +10,16 @@ MVP includes:
 
 Functional Deployable application
 
+Version 5
+
+Changes to portfolio.html
+- Added h1 title
+- Removed 3rd column from each row and created a new row of 2 columns
+Changes to index.html
+- Added h1 title
+Changes to contact.html
+- Added h1 title
+
 Version 4
 
 Changes to portfolio.html
