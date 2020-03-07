@@ -10,6 +10,11 @@ MVP includes:
 
 Functional Deployable application
 
+Version 4
+
+Changes to portfolio.html
+- Added Rows and Columns with img placeholders for future content
+
 Version 3
 
 Changes to index.html
