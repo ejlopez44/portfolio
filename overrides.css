@@ -14,3 +14,7 @@ footer {
     background-color: rgb(31, 31, 31);
     color: rgb(199, 199, 199);
 }
+
+#aboutMeImg {
+    max-width: 250px;
+}

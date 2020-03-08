@@ -10,6 +10,10 @@ MVP includes:
 
 Functional Deployable application
 
+Version 9
+- Resized About Me image
+- Added content to About Me
+
 Version 8
 - Utilized flexbox to stick footer to bottom of each page
 - updated footer styling
