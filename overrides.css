@@ -21,3 +21,7 @@ footer {
     padding: 0em 1em 1em 0em;
     max-width: 250px;
 }
+/* this helps to style the Portfolio page images between headers and corresponding text */
+.gallery {
+    padding: 1em 0em 2em 0em;
+}

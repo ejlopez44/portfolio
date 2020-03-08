@@ -12,6 +12,9 @@ MVP includes:
 
 Functional Deployable application
 
+Version 12
+- Updated portfolio.html to include sub rows and sub columns to show quick glance details of future projects
+
 Version 11
 - Updated sizes of image placeholders on portfolio.html
 
