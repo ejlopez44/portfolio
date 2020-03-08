@@ -10,6 +10,10 @@ MVP includes:
 
 Functional Deployable application
 
+Version 10
+- Fixed padding on About page image
+- Confirmed image responsiveness
+
 Version 9
 - Resized About Me image
 - Added content to About Me
