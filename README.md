@@ -10,6 +10,10 @@ MVP includes:
 
 Functional Deployable application
 
+Version 7
+- Added image to index.html
+- Added footer to all pages
+
 Version 6
 - Updated title name on navbar to direct to index.html 
 - Updated positioning of header within body tag
