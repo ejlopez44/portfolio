@@ -12,6 +12,9 @@ MVP includes:
 
 Functional Deployable application
 
+Version 13 (Tweaked after submission deadline)
+- Fine tuned the break points about and portfolio pages
+
 Version 12
 - Updated portfolio.html to include sub rows and sub columns to show quick glance details of future projects
 
