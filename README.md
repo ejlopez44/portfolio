@@ -1,5 +1,7 @@
 # portfolio
 
+Link to live application: https://ejlopez44.github.io/portfolio/index.html
+
 Objective: Create a portfolio site using Bootstrap for the first time.
 
 MVP includes:
@@ -9,6 +11,9 @@ MVP includes:
 - Minimal use of media queries thanks to Bootstrap
 
 Functional Deployable application
+
+Version 11
+- Updated sizes of image placeholders on portfolio.html
 
 Version 10
 - Fixed padding on About page image
