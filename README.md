@@ -10,6 +10,10 @@ MVP includes:
 
 Functional Deployable application
 
+Version 8
+- Utilized flexbox to stick footer to bottom of each page
+- updated footer styling
+
 Version 7
 - Added image to index.html
 - Added footer to all pages
