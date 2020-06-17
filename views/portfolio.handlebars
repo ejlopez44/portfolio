@@ -1,0 +1,33 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Portfolio</h1>
+            <br>
+        </div>
+    </div>
+    <!-- Table of portfolio items -->
+    <div class="row">
+        {{#each project}}
+        <div class="col-sm-12 col-md-12 col-lg-6 text-center">
+            <h4>{{this.title}}</h4>
+            <img class="portImg" src={{this.photo_url}} alt="Gallery photo of the application" />
+            <div class="row gallery">
+                <div class="col-12">
+                    <h5>Description</h5>
+                    <p>{{this.description}}</p>
+                </div>
+                <div class="col-12">
+                    <h5>Project Technologies</h5>
+                    <p>{{this.tech}}</p>
+                    <a href={{this.github_url}} target="_blank">View on
+                        Github</a>
+                    <br>
+                    <a href={{this.deployed_url}} target="_blank">View
+                        Deployed App</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
