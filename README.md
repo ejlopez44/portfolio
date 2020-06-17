@@ -1,6 +1,6 @@
 # portfolio
 
-Link to live application: https://ejlopez44.github.io/portfolio/index.html
+Link to live application: https://ejl-portfolio.herokuapp.com/
 
 Objective: Create a portfolio site using Bootstrap for the first time.
 
