@@ -33,6 +33,10 @@ router.get('/admin', function (req, res) {
     });
 })
 
+router.get('/add-project', function (req, res) {
+    res.render('add')
+})
+
 router.get('/edit/:id', function (req, res) {
     db.Project.findOne({
         where: {
