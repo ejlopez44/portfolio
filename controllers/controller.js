@@ -15,8 +15,12 @@ router.get('/', function (req, res) {
     res.render('index')
 })
 
+
 router.get('/portfolio', function (req, res) {
-    db.Project.findAll({ raw: true }).then(function (data) {
+    db.Project.findAll({
+        order: [['updatedAt', 'DESC']],
+        raw: true,
+    }).then(function (data) {
         res.render('portfolio', { project: data })
         // res.json(data);
     });
