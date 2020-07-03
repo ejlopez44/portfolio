@@ -34,6 +34,7 @@ $(document).ready(function () {
         let id = $(this).data('id')
         if (confirm(`Are you sure you want to commit changes to project ${id}?`)) {
             let editForm = $('form').serializeArray()
+            console.log(editForm)
             $.ajax({
                 method: 'PUT',
                 url: `/api/project/${id}`,

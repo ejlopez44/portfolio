@@ -18,11 +18,11 @@ router.get('/', function (req, res) {
 
 router.get('/portfolio', function (req, res) {
     db.Project.findAll({
-        order: [['updatedAt', 'DESC']],
+        order: [['orderingIndex', 'ASC']],
         raw: true,
     }).then(function (data) {
-        // res.render('portfolio', { project: data })
-        res.json(data);
+        res.render('portfolio', { project: data })
+        // res.json(data);
     });
 })
 
@@ -31,7 +31,10 @@ router.get('/contact', function (req, res) {
 })
 
 router.get('/admin', function (req, res) {
-    db.Project.findAll({ raw: true }).then(function (data) {
+    db.Project.findAll({
+        order: [['orderingIndex', 'ASC']],
+        raw: true,
+    }).then(function (data) {
         res.render('admin', { project: data })
         // res.json(data);
     });

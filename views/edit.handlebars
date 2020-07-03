@@ -35,6 +35,11 @@
                     <label for="tech">Technologies:</label>
                     <textarea class="form-control" id="tech" name='tech' rows="2">{{ this.tech }}</textarea>
                 </div>
+                <div class="form-group">
+                    <label for="orderingIndex">Display Index:</label>
+                    <input value='{{ this.orderingIndex }}' type="number" class="form-control" id="orderingIndex"
+                        name="orderingIndex">
+                </div>
                 <button id='editProject' data-id="{{ this.id }}" type="button"
                     class="btn btn-secondary btn-lg btn-block">Edit
                     Project</button>
