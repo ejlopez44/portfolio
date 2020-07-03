@@ -24,6 +24,14 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.TEXT,
             allowNull: false
         },
+        tech: {
+            type: DataTypes.TEXT,
+            allowNull: false
+        },
+        orderingIndex: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
     });
 
     // // need to define relation to user model
