@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     // POST projects
     $("#postProjectForm").on("submit", (event) => {
         event.preventDefault();

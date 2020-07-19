@@ -8,60 +8,70 @@ const passport = require("../config/passport");
 // require models:
 const db = require("../models");
 
-// Create a router for the app and export the router at the end of this file
+// router.get('/portfolio', function (req, res) {
+//     db.Project.findAll({
+//         order: [['orderingIndex', 'ASC']],
+//         raw: true,
+//     }).then(function (data) {
+//         // res.render('portfolio', { project: data })
+//         res.json(data);
+//     });
+// })
 
-// HTML ROUTES
-router.get('/', function (req, res) {
-    res.render('index')
-})
+// router.get('/admin', function (req, res) {
+//     db.Project.findAll({
+//         order: [['orderingIndex', 'ASC']],
+//         raw: true,
+//     }).then(function (data) {
+//         res.render('admin', { project: data })
+//         // res.json(data);
+//     });
+// })
 
+// router.get('/add-project', function (req, res) {
+//     res.render('add')
+// })
 
-router.get('/portfolio', function (req, res) {
-    db.Project.findAll({
-        order: [['orderingIndex', 'ASC']],
-        raw: true,
-    }).then(function (data) {
-        // res.render('portfolio', { project: data })
-        res.json(data);
-    });
-})
-
-router.get('/contact', function (req, res) {
-    res.render('contact')
-})
-
-router.get('/admin', function (req, res) {
-    db.Project.findAll({
-        order: [['orderingIndex', 'ASC']],
-        raw: true,
-    }).then(function (data) {
-        res.render('admin', { project: data })
-        // res.json(data);
-    });
-})
-
-router.get('/add-project', function (req, res) {
-    res.render('add')
-})
-
-router.get('/edit/:id', function (req, res) {
-    db.Project.findOne({
-        where: {
-            id: req.params.id
-        }
-    }).then((data) => {
-        // Need to render an edit page
-        res.render('edit', data.dataValues)
-        // console.log(data)
-        // res.json(data);
-    });
-})
+// router.get('/edit/:id', function (req, res) {
+//     db.Project.findOne({
+//         where: {
+//             id: req.params.id
+//         }
+//     }).then((data) => {
+//         // Need to render an edit page
+//         res.render('edit', data.dataValues)
+//         // console.log(data)
+//         // res.json(data);
+//     });
+// })
 
 // END HTML ROUTING
 
 // Need a post route to Login to passport session
 // router.post('/api/XXX', function (req, res) {
 
+// })
+
+// ------- API ROUTING
+
+// GET ALL PROJECTS
+router.get('/api/projects', function (req, res) {
+    db.Project.findAll({
+        order: [['orderingIndex', 'ASC']],
+        raw: true,
+    }).then(function (data) {
+        res.json(data);
+    });
+})
+
+// GET BY ID , Need to massage this route
+// router.get('/api/project:id', function (req, res) {
+//     db.Project.findAll({
+//         order: [['orderingIndex', 'ASC']],
+//         raw: true,
+//     }).then(function (data) {
+//         res.json(data);
+//     });
 // })
 
 // ADD PROJECT

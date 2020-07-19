@@ -8,14 +8,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-/* Footer styling continued, margin-top is key component to make footer stick to bottom */
-footer {
-    margin-top: auto;
-    text-align: center;
-    line-height: 60px;
-    background-color: rgb(31, 31, 31);
-    color: rgb(199, 199, 199);
+
+#body-target{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 /* About Me image specific styling to dictate sizing and widths */
 #aboutMeImg {
     padding: 0em 1em 1em 0em;
