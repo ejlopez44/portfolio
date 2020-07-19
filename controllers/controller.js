@@ -21,8 +21,8 @@ router.get('/portfolio', function (req, res) {
         order: [['orderingIndex', 'ASC']],
         raw: true,
     }).then(function (data) {
-        res.render('portfolio', { project: data })
-        // res.json(data);
+        // res.render('portfolio', { project: data })
+        res.json(data);
     });
 })
 
