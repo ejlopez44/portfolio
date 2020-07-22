@@ -1,29 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import ProjCard from '../components/ProjCard/ProjCard'
+import API from '../utils/API'
 
 function Portfolio() {
 
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        getProjects()
+        API.getAllProjects().then(data => {
+            setProjects(data)
+        })
     }, [])
-
-    function getProjects() {
-        return axios.get(
-            '/api/projects'
-        ).then(res => {
-            console.log(res.data)
-            setProjects(res.data)
-        }).catch(err => console.log(err))
-    }
 
     return (
         <div className="row">
             <div className="col-12">
                 <h1>Portfolio</h1>
-                {/* <br /> */}
+                <br />
             </div>
             {/* Table of portfolio items to map through, set state to render all of these call ProjCard*/}
             {projects.map(project => {

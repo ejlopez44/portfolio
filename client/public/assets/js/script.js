@@ -51,22 +51,22 @@ $(document).ready(function () {
     $('#editProject').on('click', submitEdits)
 
 
-    // DELETE Projects
-    function removeProj() {
-        // get id of button
-        let id = $(this).data('id')
-        if (confirm(`Are you sure you want to delete project ${id} from your portfolio?`)) {
-            $.ajax({
-                method: 'DELETE',
-                url: `/api/project/${id}`,
-            }).then(res => {
-                alert("Project successfully deleted!")
-                location.reload()
-            }).fail(res => {
-                alert("Server responded with an error")
-            });
-        }
-        return;
-    }
-    $('.delProj').on('click', removeProj)
+    // DELETE Projects (This is migrated to API.js)
+    // function removeProj() {
+    //     // get id of button
+    //     let id = $(this).data('id')
+    //     if (confirm(`Are you sure you want to delete project ${id} from your portfolio?`)) {
+    //         $.ajax({
+    //             method: 'DELETE',
+    //             url: `/api/project/${id}`,
+    //         }).then(res => {
+    //             alert("Project successfully deleted!")
+    //             location.reload()
+    //         }).fail(res => {
+    //             alert("Server responded with an error")
+    //         });
+    //     }
+    //     return;
+    // }
+    // $('.delProj').on('click', removeProj)
 }) // End of Document Ready

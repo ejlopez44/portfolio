@@ -17,16 +17,44 @@ body {
 
 /* About Me image specific styling to dictate sizing and widths */
 #aboutMeImg {
-    padding: 0em 1em 1em 0em;
     max-width: 250px;
+    border-radius: 100%;
+    padding: 2em 0 2em 0;
+    /* box-shadow: 0px 2px 8px -1px rgba(41, 41, 41, 0.8); */
 }
+
+.tileDesign {
+    /* max-width: 250px; */
+    box-shadow: 7px 7px 7px -6px hsla(0,0%,56.1%,.8);
+    border: lightgrey solid .5px;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 0em 1em 0em;
+}
+
+.portCard {
+    box-shadow: 7px 7px 7px -6px hsla(0,0%,56.1%,.8);
+    border: lightgrey solid .5px;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 0em 1em 0em;
+}
+
 /* this helps to style the Portfolio page images between headers and corresponding text */
 .gallery {
     padding: 1em 0em 2em 0em;
     text-align: left;
+    /* box-shadow: 5px 6px 9px -5px hsla(0,0%,56.1%,.8) */
 }
 .portImg {
-    max-width: 100%;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
     margin-top: 1rem;
-    border: .2rem solid darkgrey;
+    /* border-radius: 22px;
+    box-shadow: 5px 6px 9px -5px hsla(0,0%,56.1%,.8) */
 }
+
+/* @media only screen and (max-width: 992px) {
+    body {
+      background-color: lightblue;
+    }
+  } */

@@ -64,26 +64,23 @@ router.get('/api/projects', function (req, res) {
     });
 })
 
-// GET BY ID , Need to massage this route
-// router.get('/api/project:id', function (req, res) {
-//     db.Project.findAll({
-//         order: [['orderingIndex', 'ASC']],
-//         raw: true,
-//     }).then(function (data) {
-//         res.json(data);
-//     });
-// })
+// GET BY ID
+router.get('/api/project/:id', function (req, res) {
+    db.Project.findOne({
+        where: {
+            id: req.params.id
+        }
+    }).then(function (data) {
+        res.json(data);
+    });
+})
 
 // ADD PROJECT
 router.post('/api/project', function (req, res) {
     console.log(req.body)
     db.Project.create(req.body)
         .then((data) => {
-            // temporary response
-            res.json(data);
-            // ideal response is a redirect
-            // 201 returns 'created'
-            // res.sendStatus(201)
+            res.sendStatus(201)
         })
         .catch((err) => {
             res.status(400).json(err);
