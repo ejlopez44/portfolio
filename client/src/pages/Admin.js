@@ -12,7 +12,7 @@ function Admin() {
         })
     }, [])
 
-    // NEED TO DEFINE ONCLICK FOR DELETE BUTTON AND PASS IT AS PROPS TO ADMINROW
+    // ONCLICK FOR DELETE BUTTON
     async function deleteBtn(event, id) {
         event.preventDefault();
         if (window.confirm(`Are you sure you want to delete project ${id}?`)) {

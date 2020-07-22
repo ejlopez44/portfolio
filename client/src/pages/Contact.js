@@ -7,7 +7,8 @@ function Contact() {
         <div className="row">
             <div className="col">
                 <h1>Contact</h1>
-                <p>Text: 1|856|343|7875</p>
+                <p>Scan to Call or Text</p>
+                <img src="https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=18563437875" />
                 <p>titolopez44@yahoo.com</p>
                 <p><a href="https://www.linkedin.com/in/ejlopez44/" target="_blank">Visit my LinkedIn
             Profile</a></p>
